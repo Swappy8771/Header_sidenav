@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Weather App</h2>
+  <form (submit)="getWeather()">
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="city"
+        name="city"
+        placeholder="Enter city name"
+        required
+      />
+      <button type="submit" class="btn btn-primary">
+        <i class="bi bi-search"></i> Get Weather
+      </button>
+    </div>
+  </form>
+
+  <div *ngIf="weatherData" class="output">
+    <h3>Weather in {{ weatherData.name }}</h3>
+    <p>Temperature: {{ weatherData.main.temp }}°C</p>
+    <p>Weather: {{ weatherData.weather[0].main }}</p>
+    <p>Description: {{ weatherData.weather[0].description }}</p>
+    <i class="wi wi-owm-{{ weatherData.weather[0].id }}"></i>
+  </div>
+</div>

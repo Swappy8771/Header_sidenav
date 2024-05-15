@@ -1,0 +1,21 @@
+<!-- login.component.html -->
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="rememberMe">
+        <label for="rememberMe">Remember Me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  

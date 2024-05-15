@@ -1,0 +1,35 @@
+/* sidenav.component.css */
+.sidenav {
+  /* margin-top: 62px; */
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 62px;
+  left: 0;
+  background-color: #f0f0f0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav ul li {
+  padding: 8px 8px;
+}
+
+.sidenav ul li a {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sidenav ul li a:hover {
+  color: #f11;
+}

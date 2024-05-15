@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="head">
+    <div class="company-logo">
+      <img src="../../assets/brywise.png" alt="Company Logo" alt="brywise" >
+    </div>
+    <div class="day-format">
+       {{ currentDate | date: 'medium' }}
+    </div>
+  </div>
+  <div class="search-bar">
+    <input type="text" placeholder="Search...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+  <div class="header-icons">
+    
+    <div class="user-icon">
+      <img src="../../assets/user-solid.svg" alt="user-icon">
+    </div>
+    <div class="user-name">
+    <p style="margin-left: 2px;"> Hi,{{name}}</p>
+  </div>
+    <div class="dropdown-icon">
+<button><img src="../../assets/angle-down.svg" width="16" height="16"></button>
+    </div>
+    <div class="bell-icon">
+      <button><i class="fas fa-bell"></i></button>
+    </div>
+    <div class="logout-icon">
+      <button><i class="fas fa-sign-out-alt"></i></button>
+    </div>
+    <div class="google-apps-icon">
+      <button><i class="fas fa-th"></i></button>
+    </div>
+  </div>
+</header>
